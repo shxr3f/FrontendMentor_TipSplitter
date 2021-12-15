@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Splitter</title>
+</head>
+<body>
+    <header class="logo">
+        <img src="images/logo.svg" alt="logo">
+    </header>
+    <section class="calculator">
+        <div class="calculator-left">
+            <div class="calculator-bill">
+                <h1>Bill</h1>
+                <input type="number" min="0" oninput="validity.valid||(value='');" step=".01" placeholder = 0 class ="bill-input" id = "billuserin">
+            </div>
+            <div class="calculator-tip">
+                <h1>Select Tip %</h1>
+                <div class="calculator-tip-btngrid">
+                    <input type="button" value = "5%" class = "input-btn" id = "5in">
+                    <input type="button" value = "10%" class = "input-btn" id = "10in">
+                    <input type="button" value = "15%" class = "input-btn" id = "15in">
+                    <input type="button" value = "25%" class = "input-btn" id = "25in">
+                    <input type="button" value = "50%" class = "input-btn" id = "50in">
+                    <input type="number" min="0" oninput="validity.valid||(value='');" placeholder = "Custom" class = "bill-input custom" id = "customin">
+                </div>
+            </div>
+            <div class="calculator-ppl">
+                <h1>Number of People</h1>
+                <input type="number" required min="0" oninput="validity.valid||(value='');" step = 1 placeholder=0 class = "bill-input man" id = "ppluserin">
+            </div>
+        </div>
+        <div class="calculator-right">
+            <div class="darkgreensec">
+                <div class="calculator-tipamt end-dsp">
+                    <div class="tipamt-l">
+                        <h1>Tip Amount</h1>
+                        <p>/ person</p>
+                    </div>
+                    <div class="tipamt-r">
+                        <h1 class="price" id = 'tipamtdsp'></h1>
+                    </div>                    
+                </div>
+                <div class="calculator-total end-dsp">
+                    <div class="tipamt-l">
+                        <h1>Total</h1>
+                        <p>/ person</p>
+                    </div>
+                    <div class="tipamt-r">
+                        <h1 class="price" id = 'totalamtdsp'></h1>
+                    </div>       
+                </div>
+                <div class="calculator-reset">
+                    <input type="button" value = "Reset" class = "input-btn reset" id = "resetbtn"> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
