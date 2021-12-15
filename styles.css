@@ -214,6 +214,13 @@ input[type=number] {
         padding-left: 0;
         margin: 0;
     }
+    .calculator-tip-btngrid{
+        display: grid;
+        grid-template-columns: repeat(2,7.3125rem);
+        grid-template-rows: repeat(3,3.125rem);
+        gap: 1rem;
+        justify-content: center;
+    }
   }
 
 @media screen and (max-width: 1020px) {
