@@ -204,7 +204,7 @@ input[type=number] {
 @media screen and (max-width: 800px) {
     .calculator{
         grid-template-columns: 29.7rem ;
-        grid-template-rows: 21.03125rem 21.03125rem;
+        grid-template-rows: 24.03125rem 21.03125rem;
         grid-template-areas: 
         "left"
         "right";
